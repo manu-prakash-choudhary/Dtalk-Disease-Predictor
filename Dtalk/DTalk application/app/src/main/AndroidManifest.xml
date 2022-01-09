@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dtalk">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dtalk_logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DTalk">
+        <activity
+            android:name=".input_medicine_detail_temp"
+            android:exported="true" />
+        <activity android:name=".Selected_Doctor.Chat_Log_Activity" />
+        <activity android:name=".Selected_Doctor.About_Doctor_Activity" />
+        <activity
+            android:name=".View_Pager.After_Doctor_Selected_Activity"
+            android:label="@string/title_activity_after_doctor_selected"
+            android:theme="@style/Theme.DTalk.NoActionBar" />
+        <activity android:name=".App_Open.ForgetPassword_Activity" />
+        <activity android:name=".App_Open.Profile_Activity" />
+        <activity android:name=".App_Open.SplashScreen_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".App_Open.SignIn_Activity" />
+        <activity android:name=".App_Open.SignUp_Activity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

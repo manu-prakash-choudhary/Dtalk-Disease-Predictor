@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/wrapper2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_theme"
+    tools:context=".View_Pager.Search_Disease_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/predict_button"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_frame"
+            android:foreground="?attr/selectableItemBackground"
+            android:foregroundTint="@color/gray"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="Predict"
+            android:textColor="@color/white"
+
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_35sdp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_frame"
+            android:foreground="?attr/selectableItemBackground"
+            android:foregroundTint="@color/gray"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="Back"
+            android:textColor="@color/white"
+
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sy1_card"
+            app:cardElevation="@dimen/_30sdp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="#EE1B1B1B"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/sy1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:hint="Enter Sympton-1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sy2_card"
+            android:layout_below="@id/sy1_card"
+            app:cardElevation="@dimen/_30sdp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="#EE1B1B1B"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/sy2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:layout_below="@+id/sy1_card"
+                android:hint="Enter Sympton-2"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sy3_card"
+            android:layout_below="@+id/sy2_card"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="15sp"
+            app:cardElevation="@dimen/_30sdp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="#EE1B1B1B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/sy3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:layout_below="@+id/sy2"
+                android:hint="Enter Sympton-3"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/text_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sy3_card"
+
+            android:padding="@dimen/_5sdp"
+            android:text=" Fill the symptoms from these options:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+
+        <TextView
+            android:id="@+id/Disease_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:padding="10sp"
+            android:text="Disease:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Disease_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+            android:padding="10sp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/precaution_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/results"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5sp"
+            android:padding="10sp"
+            android:text="Take Precaution:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/precaution_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/precaution_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="3dp"
+            android:padding="10sp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+
+
+        <TextView
+            android:id="@+id/Doctors_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/precaution_results"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="10dp"
+            android:padding="10sp"
+            android:text="Recommended Doctors:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/Doctors_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Doctors_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+            android:textIsSelectable="true"
+            android:padding="10sp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/doctors_recommend_button"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:background="@drawable/button_frame"
+            android:text="Doctor"
+            android:textColor="@color/white"
+            android:foreground="?attr/selectableItemBackground"
+            android:foregroundTint="@color/gray"
+            android:textSize="15dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/myRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/predict_button"
+            android:layout_below="@+id/text_msg"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/background_theme"
+            android:padding="@dimen/_2sdp" />
+
+    </RelativeLayout>
+
+</FrameLayout>
