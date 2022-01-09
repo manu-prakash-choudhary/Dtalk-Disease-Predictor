@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    tools:context=".App_Open.SignIn_Activity">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SignIn"
+    android:textColor="@color/white"
+    android:textSize="27sp"
+    android:layout_margin="35dp"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signin_emai_card"
+        android:layout_centerInParent="true"
+        android:background="@color/backbluedark"
+        app:cardElevation="@dimen/_30sdp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/backbluedark"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enter_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/enter_password"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/small_rectangle"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enter_email_id_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:hint="Email Id"
+                android:padding="@dimen/_6sdp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signin_pass_card"
+        android:layout_below="@+id/signin_emai_card"
+        app:cardElevation="@dimen/_30sdp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/backbluedark"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/small_rectangle"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enter_password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="@color/white"
+                android:padding="@dimen/_6sdp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signin_button_card"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:cardElevation="@dimen/_30sdp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/dark_small_rec_colour"
+        android:layout_below="@+id/signin_pass_card"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Signin_button"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_frame"
+            android:paddingBottom="@dimen/_2sdp"
+            android:foregroundTint="@color/gray"
+            android:text="SignIn"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="203dp"
+            tools:layout_editor_absoluteY="348dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/forget_password_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_button_card"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:text="Forget Password?"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/not_registered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_button_card"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10sp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+
+        android:text="Not Registered?"
+        android:textColor="@color/white" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/custom_signin_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_50sdp"
+        android:background="@color/backbluedark"
+        app:cardCornerRadius="14dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/custom_loading2"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:background="@drawable/custom_progress"
+            android:paddingTop="30dp"
+
+            android:text="Loading..."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

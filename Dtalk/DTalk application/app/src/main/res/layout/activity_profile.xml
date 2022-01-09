@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_theme"
+    tools:context=".App_Open.Profile_Activity">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circular_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/user_default_pic" />
+
+    <TextView
+        android:id="@+id/addProfileImage"
+        android:layout_below="@id/circular_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Add Profile Image"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/user_profile_card"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/addProfileImage"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardElevation="@dimen/_30sdp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#EE1B1B1B"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/username_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/small_rectangle"
+            android:padding="@dimen/_7sdp"
+            android:hint="Username"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/countryName_profile_card"
+        android:layout_below="@+id/user_profile_card"
+        android:background="@color/backbluedark"
+        app:cardElevation="@dimen/_30sdp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#EE1B1B1B"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/countryName_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_editText"
+            android:padding="@dimen/_7sdp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/small_rectangle"
+            android:hint="Country"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cityname_profile_card"
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/_30sdp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#EE1B1B1B"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_below="@+id/countryName_profile_card"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/cityName_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/small_rectangle"
+        android:layout_below="@id/countryName_editText"
+        android:layout_marginBottom="5dp"
+        android:hint="City"
+        android:padding="@dimen/_7sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Profession_profile_card"
+        android:layout_below="@id/cityname_profile_card"
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/_30sdp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#EE1B1B1B"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/Profession_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cityName_editText"
+
+            android:background="@drawable/small_rectangle"
+            android:hint="Profession"
+            android:padding="@dimen/_7sdp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/Save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Profession_profile_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/button_frame"
+        android:foreground="?attr/selectableItemBackground"
+        android:foregroundTint="@color/gray"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/Already_user_made_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Save_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:foregroundTint="@color/white"
+        android:text="If wanted to update profile, else skip... "
+        android:textColor="@color/white" />
+
+
+
+
+
+
+</RelativeLayout>

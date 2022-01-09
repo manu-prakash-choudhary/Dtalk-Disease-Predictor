@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".Bottom_Menu.Home_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_theme">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/dark_small_rec_colour"
+            app:cardElevation="@dimen/_40sdp"
+            android:padding="@dimen/_15sdp"
+            app:cardCornerRadius="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/App_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="DtaLK"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageButton
+                    android:id="@+id/back_arrow"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:background="@color/dark_small_rec_colour"
+                    android:padding="@dimen/_7sdp"
+                    android:src="@drawable/logout_img" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/back_arrow"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:background="@color/dark_small_rec_colour"
+                    app:tabIndicatorColor="#FFFFFF"
+                    app:tabTextColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/home_card" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
