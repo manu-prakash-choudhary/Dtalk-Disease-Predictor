@@ -1,5 +1,5 @@
 # Disease_prediction
-This was a group project done by me and 3 other members of my class where we have created a demo application named Dtalk for predicting the possible disease using the symptoms of patient.
+It was a group project done by me and 2 other members of my class where we have created a demo application named Dtalk for predicting the possible disease using the symptoms of patient.
 
 ![1 (4)](https://user-images.githubusercontent.com/74171135/148676965-b20d9888-b53f-4af9-8eda-e026d65d62e2.jpeg)
 
