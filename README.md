@@ -21,6 +21,6 @@ Dtalk is made up on the Kotlin, Python 3.8, Firebase(database). UI/UX of the Dta
 
 
 
-
 https://user-images.githubusercontent.com/74171135/231319801-b6f6325e-caa9-4fd8-aed1-097fc32edd78.mp4
 
+Author - Manu Prakash Choudhary
